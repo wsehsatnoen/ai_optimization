@@ -24,7 +24,7 @@ linreg.fit(X_train, y_train)
 # Testing the model
 y_pred = linreg.predict(X_test)
 
-# Displaying the results
+# Displaying the results via command line
 print("Linear Regression Results")
 print("R2 Score: ", r2_score(y_test, y_pred))
 print("Mean Squared Error:", mean_squared_error(y_test, y_pred))
