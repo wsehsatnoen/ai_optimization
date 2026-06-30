@@ -31,7 +31,7 @@ print("Mean Squared Error:", mean_squared_error(y_test, y_pred))
 
 # Graphing the results on two plots, one to show model's prediction against the actual target,
 # and one to show a direct comparision of the predicted values against the actual values.
-fig1, ax = plt.subplots(ncols=2, figsize=(10, 5))
+fig, ax = plt.subplots(ncols=2, figsize=(10, 5))
 
 ax[0].scatter(range(len(y_test)), y_test, color='blue')
 ax[0].plot(y_pred, color='orange', linewidth=3)
@@ -40,7 +40,7 @@ ax[0].set(xlabel='Data point', ylabel='Target', title='Actual vs Predicted')
 ax[1].scatter(y_pred, y_test, color='red')
 ax[1].set(xlabel='Predicted', ylabel='Actual', title='Predicted vs Actual')
 
-fig1.show()
+fig.show()
 
 
 
