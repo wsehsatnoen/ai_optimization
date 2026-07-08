@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 from sklearn.linear_model import LinearRegression
+from sklearn.manifold import TSNE
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 
@@ -30,7 +31,7 @@ print("R2 Score: ", r2_score(y_test, y_pred))
 print("Mean Squared Error:", mean_squared_error(y_test, y_pred))
 
 # Graphing the results on two plots, one to show model's prediction against the actual target,
-# and one to show a direct comparision of the predicted values against the actual values.
+# and one to show a direct comparison of the predicted values against the actual values.
 fig, ax = plt.subplots(ncols=2, figsize=(10, 5))
 
 ax[0].scatter(range(len(y_test)), y_test, color='blue', label='Actual Data')
