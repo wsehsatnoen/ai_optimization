@@ -20,7 +20,7 @@ linreg(linear_model, X_train, y_train, X_test, y_test)
 # lasso(X_train, y_train, X_test, y_test)
 # ridge(X_train, y_train, X_test, y_test)
 
-# Ensemble Models
+# Ensemble Learning Techniques
 bagger(linear_model, X_train, y_train, X_test, y_test)
 ada(linear_model, X_train, y_train, X_test, y_test)
 
