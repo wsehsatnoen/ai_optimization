@@ -13,12 +13,12 @@ linear_model = LinearRegression()
 linreg(linear_model, X_train, y_train, X_test, y_test)
 
 # Optimized Models
-# randomsearch(linear_model, X_train, y_train, X_test, y_test)
-# halvesearch(linear_model, X_train, y_train, X_test, y_test)
+randomsearch(linear_model, X_train, y_train, X_test, y_test)
+halvesearch(linear_model, X_train, y_train, X_test, y_test)
 
 # Regularized Models
-# lasso(X_train, y_train, X_test, y_test)
-# ridge(X_train, y_train, X_test, y_test)
+lasso(X_train, y_train, X_test, y_test)
+ridge(X_train, y_train, X_test, y_test)
 
 # Ensemble Learning Techniques
 bagger(linear_model, X_train, y_train, X_test, y_test)
