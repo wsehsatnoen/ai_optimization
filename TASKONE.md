@@ -1,5 +1,7 @@
 # Task One: Research and Select an AI Algorithm
 
+[Back to README](README.md)
+
 The task at hand is requesting an AI algorithm that will solve an optimization problem; predict the health risk score based on measurable weather features. In this, we will research three different algorithms that could potentially solve the problem and select one. The one that will be selected will be trained and tested on the DQN1 dataset provided. The three researched algorithms are provided below.
 
 ## Algorithm One (Linear Regression)
