@@ -1,4 +1,4 @@
-WGU D682 Task Four
+# Task Four: What's Next?
 
 A new use case for the optimized linear regression, which in the case of task two was the ridge regression regularization method, would be to accurately predict the number of Cycle Count tasks that will be generated for warehouse associates to complete.
 

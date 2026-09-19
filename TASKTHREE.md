@@ -1,8 +1,8 @@
-WGU D682 Task Three
+# Task Three: Exploring the data
 
 After training a linear regression model on the DQN1 dataset, it is crucial to evaluate the significance of the features and their contribution to the health risk score.
 
-**Data Exploration and Analysis**
+## Data Exploration and Analysis
 
 Out of the thirty-four features to predict health risk score, with an initial look at the data, there are three notable features that have a significant impact on the outcome. First, temperature, with a high of 99.85° and low of 55.55°, such distribution can form a notable trend that heavily influences heat stress and health risk calculations. The second notable feature is humidity with a range of 11.75% and 92.46%. A range as such, in correlation with the nature of humidity and human perspiration, can directly impact the health risk. The final feature is tempmax with a high of 107.8° and a low of 62.04°. This in correlation with the humidity has a strong influence on the health score.
 
@@ -10,7 +10,7 @@ Two patterns worth mentioning are the temperature and the humidity. When the max
 
 Given these relative trends, the features with the highest influence on the health risk score theoretically should be the temperature and humidity. This also coincides with body heat regulation; the elevated level of humidity does not allow the sweat on the skin to easily evaporate, hindering the ability to remove heat.
 
-**Interpretation of Model Outputs**
+## Interpretation of Model Outputs
 
 From the optimized model in the second portion of the overall assignments, the metrics used are aligned with regression evaluation: R2 and Mean Squared Error. The evaluated score of the best optimization technique, ridge regression, produced a result of R2 = 0.9689 and mean squared error = 0.0141. Overall, the ridge regression performs at a high accuracy with only 3.02% of the data left unexplained and to random errors. However, for future improvements, though slight, tuning parameters and feature engineering can provide such modifications to better the model.
 
