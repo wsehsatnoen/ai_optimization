@@ -81,3 +81,5 @@ To summarize, the Bagging Ensemble and AdaBoost Ensemble techniques did not show
 | AdaBoost Ensemble           | .9657    | .0155              |
 
 Notably, the best performing method/technique is Ridge Regression regularization technique. Though the score is only better by a factor of one thousandth, it still outperforms the others. Notable, because a linear regression model is a strong stable learner, optimization techniques will only provide small improvements. For the purpose of a business study, ridge regression will be the best possible solution to model weather data off of to provide a predictive health score.
+
+[Back to README](README.md)

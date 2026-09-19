@@ -53,3 +53,5 @@ After training and testing the linear model on the DQN1 dataset, here are the re
 ![Actual data compared with model prediction and Predicted values vs Actual values](./results/Plots.png)
 
 From these results, it is evident that the 0.968 R2 score is close to the perfect fit of 1.0 and the 0.015 Mean Squared Error is close to zero. It is presumable that the algorithm has both a low variation and has provided line of near perfect fit. However, as seen from the plot on the left, there are noticeable outliers from which the algorithm could not predict. For example, located above datapoint 150 the blue data point is significantly higher than the orange predicted value. As noted in the linear regression drawbacks, these outliers may in fact be an example of aforementioned “tipping points” that the model is mathematically unable to represent. This represents a clear area of potential improvement that could be addressed in future iterations.
+
+[Back to README](README.md)
