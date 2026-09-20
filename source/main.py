@@ -1,4 +1,4 @@
-from dataprep import X_train, y_train, X_test, y_test
+from source.data.dataprep import X_train, y_train, X_test, y_test
 
 from linreg import linreg
 from optimization import randomsearch, halvesearch
