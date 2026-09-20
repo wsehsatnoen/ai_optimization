@@ -2,6 +2,55 @@
 
 Four tasks built on the same dataset and the same linear regression model. Task One selects and validates the algorithm, Task Two optimizes it, Task Three interprets what the optimized model learned, and Task Four applies it to a new use case.
 
+## Setup Instructions
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package installer)
+
+### Virtual Environment Setup
+
+**macOS/Linux:**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+**Windows:**
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+### Required Libraries
+
+Install the required dependencies:
+
+```bash
+pip install scikit-learn pandas matplotlib scipy
+```
+
+**Library breakdown:**
+- `scikit-learn` - Machine learning algorithms (Linear Regression, Lasso, Ridge, ensemble methods, hyperparameter tuning)
+- `pandas` - Data loading and manipulation
+- `matplotlib` - Visualization and plotting
+- `scipy` - Statistical distributions for hyperparameter optimization
+
+### Running the Code
+
+Navigate to the source directory and run:
+```bash
+cd source
+python main.py
+```
+
+### Deactivating the Virtual Environment
+
+When you're done:
+```bash
+deactivate
+```
+
 ## Task One: Research and Select an AI Algorithm
 
 The task is to research three AI algorithms capable of solving the optimization problem, predicting a health risk score from measurable weather features, and to select one to train and test on the DQN1 dataset. The three researched are Linear Regression, Gaussian Process Regression, and Decision Tree Regression.
