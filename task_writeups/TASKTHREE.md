@@ -1,6 +1,6 @@
 # Task Three: Exploring the data
 
-[Back to README](README.md)
+[Back to README](../README.md)
 
 After training a linear regression model on the DQN1 dataset, it is crucial to evaluate the significance of the features and their contribution to the health risk score.
 
@@ -18,17 +18,17 @@ From the optimized model in the second portion of the overall assignments, the m
 
 To identify the functionality of the model, gathering the Shapley values provides a plethora of information.
 
-![Top Shapley Values](results/shapley_values.png)
+![Top Shapley Values](../results/shapley_values.png)
 
 One notable insight is the importance of the heat index feature over all others. This feature has a mean Shapley value of 0.46 which is nearly double the over features. This implies that the health risk score is heavily influenced by the heat index.
 
-![Bee Swarm](results/bee_swarm.png)
+![Bee Swarm](../results/bee_swarm.png)
 
 Another notable insight is the severity of the heat index. From this bee swarm graph above, the color of the datapoints represent the range of values (red being high, blue being low) and the placement on the x axis denotes the effect that feature has on the prediction of the model. Notice the cluster of blue data points of the heat index close to a SHAP value of zero, however, as the data point turns red, the distribution notably thins out and the SHAP value increases. This denotes that the model’s weight on that feature provides the most significant impact on the outcome of the prediction.
 
 The final insight worth mentioning is features that are not important.
 
-![All Shapley Values](results/mean_shapley_all.png)
+![All Shapley Values](../results/mean_shapley_all.png)
 
 Above is a demonstration of all the mean Shapley values for this model. There are four features whose values are both zero and do not have a noticeable bar represented. Their specific Shapley values are month = 0.0, no2 = 8.643e-05, precipcover = 7.699e-5, and pm2.5 = 7.179e-4. The month feature has no influence on the model’s decision, furthermore, the other three features are effectively insignificant.
 
@@ -36,4 +36,4 @@ There is a lot to be inferred from this information; however, the most important
 
 Overall, the linear regression optimized to ridge regression is a sufficient model for this optimization problem. Any improvements will be miniscule at best, however, after reviewing the Shapley values and coefficients, as stated above, there are improvements that can be made.
 
-[Back to README](README.md)
+[Back to README](../README.md)

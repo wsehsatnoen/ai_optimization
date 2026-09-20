@@ -10,7 +10,7 @@ Linear regression is selected. The algorithm assigns weights to each feature, wh
 
 The model is measured on R2 score and Mean Squared Error, producing an R2 of 0.9677 and a Mean Squared Error of 0.0146 on the DQN1 dataset. The plots show noticeable outliers the model could not predict, which is consistent with the tipping point limitation identified beforehand.
 
-[Read the full write-up](TASKONE.md)
+[Read the full write-up](task_writeups/TASKONE.md)
 
 ## Task Two: Optimization, Regularization, and Ensemble Methods
 
@@ -18,7 +18,7 @@ The base linear regression model reaches an R2 score of .9677 and a Mean Squared
 
 Ridge regression performs the best of the seven, at an R2 score of .9688 and a Mean Squared Error of .0141. Lasso performs the worst by a wide margin. The two ensemble techniques score below the base model, which is the expected outcome, as ensemble methods are intended to combine weak learners and linear regression is already a strong stable one.
 
-[Read the full write-up](TASKTWO.md)
+[Read the full write-up](task_writeups/TASKTWO.md)
 
 ## Task Three: Feature Significance and Model Interpretation
 
@@ -26,7 +26,7 @@ With the model optimized to ridge regression, the next step is to evaluate the s
 
 The heat index is the most important feature by a wide margin, with a mean Shapley value of 0.46, nearly double the next feature. The bee swarm graph shows the effect is not evenly distributed; as the heat index rises, its impact on the prediction increases sharply. At the other end, four features are effectively insignificant: month, no2, precipcover, and pm2.5. The results confirm that heat and humidity drive the health risk score, and they also confirm the limitation raised in Task One, as a linear regression fits a straight line and cannot represent the sudden impact the heat index has at higher values.
 
-[Read the full write-up](TASKTHREE.md)
+[Read the full write-up](task_writeups/TASKTHREE.md)
 
 ## Task Four: New Use Case for the Optimized Model
 
@@ -34,4 +34,4 @@ A new use case for the optimized model is predicting the number of Cycle Count t
 
 Because inventory does not depend on a single day of activity, the features are engineered through autoregression, using a lag of the four previous operational days to match the average shelf life of outbound product. Ridge regression suits this design, as the lagged features introduce multicollinearity and ridge is built to manage it by penalizing large coefficients. The model is measured on the same two metrics as the previous tasks, comparing its daily predictions against the tasks actually generated at 4:30 pm.
 
-[Read the full write-up](TASKFOUR.md)
+[Read the full write-up](task_writeups/TASKFOUR.md)

@@ -1,6 +1,6 @@
 # Task Two: Optimize
 
-[Back to README](README.md)
+[Back to README](../README.md)
 
 ## Selection of Optimization Techniques
 
@@ -32,7 +32,7 @@ The two evaluation metrics that will be used are the same that have been used in
 
 After successful completion of each of the techniques and methods provided, here are the results. As in any scientific method, a control must be performed. The base model can provide a R2 score of .9677 (four significant figures to show the slight differences between methods) and a Mean Squared Error of .0147. Here is the relationship between the model and data:
 
-![Control](results/control.png)
+![Control](../results/control.png)
 
 With the R2 score and Mean Squared Error exceptionally close to perfection, the linear regression model is adequate at sufficing the business optimization problem. However, the goal of this study is to determine if there is a method that can improve the model more ever so slightly. To start, here are the results of the optimization techniques:
 
@@ -40,11 +40,11 @@ With the R2 score and Mean Squared Error exceptionally close to perfection, the 
 
 The RandomSearchCV (“CV” meaning cross validation) performs at a R2 score of .9685 and a mean squared error of .0147. Slightly better performance compared to the control.
 
-![Random Search](results/random_search.png)
+![Random Search](../results/random_search.png)
 
 The HalvingRandomSearchCV performs an R2 score of .9685 and a mean squared error of .0143. These are relatively the same as Random Search, however, the mean squared error is slightly better.
 
-![Halving Random Search](results/halving_random_search.png)
+![Halving Random Search](../results/halving_random_search.png)
 
 Out of these two optimization techniques, the better solution is the Halving Random Search not only due to the slightly better performance, but also due to the functionality of generating and cross validating models.
 
@@ -52,21 +52,21 @@ Out of these two optimization techniques, the better solution is the Halving Ran
 
 The Lasso Regression method resulted in an R2 score of .6874 and a Mean Squared Error of .1418; to say the least, exceptionally worse.
 
-![Lasso Regression](results/lasso_regression.png)
+![Lasso Regression](../results/lasso_regression.png)
 
 The Ridge Regression method resulted in an R2 score of .9688 and a Mean Squared Error of .0141, outperforming the previous three techniques/methods, and the base model.
 
-![Ridge Regression](results/ridge_regression.png)
+![Ridge Regression](../results/ridge_regression.png)
 
 **Ensemble Techniques:**
 
 As mentioned above, ensemble techniques are counterproductive for the model due to linear regression being a strong stable learner. Ensemble techniques are intended to combine multiple weak learning models to strengthen and improve overall accuracy. To represent these counterproductivities, the Bagging Ensemble technique produces and R2 score of .9665 and a mean squared error of .0152.
 
-![Bagging Ensemble](results/bagging_ensemble.png)
+![Bagging Ensemble](../results/bagging_ensemble.png)
 
 The AdaBoost Ensemble technique produced an R2 score of .9657 and a mean squared error of .0155.
 
-![AdaBoost Ensemble](results/ada_boost_ensemble.png)
+![AdaBoost Ensemble](../results/ada_boost_ensemble.png)
 
 To summarize, the Bagging Ensemble and AdaBoost Ensemble techniques did not show improvement from the base model.
 
@@ -84,4 +84,4 @@ To summarize, the Bagging Ensemble and AdaBoost Ensemble techniques did not show
 
 Notably, the best performing method/technique is Ridge Regression regularization technique. Though the score is only better by a factor of one thousandth, it still outperforms the others. Notable, because a linear regression model is a strong stable learner, optimization techniques will only provide small improvements. For the purpose of a business study, ridge regression will be the best possible solution to model weather data off of to provide a predictive health score.
 
-[Back to README](README.md)
+[Back to README](../README.md)

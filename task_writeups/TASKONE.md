@@ -1,6 +1,6 @@
 # Task One: Research and Select an AI Algorithm
 
-[Back to README](README.md)
+[Back to README](../README.md)
 
 The task at hand is requesting an AI algorithm that will solve an optimization problem; predict the health risk score based on measurable weather features. In this, we will research three different algorithms that could potentially solve the problem and select one. The one that will be selected will be trained and tested on the DQN1 dataset provided. The three researched algorithms are provided below.
 
@@ -52,8 +52,8 @@ Finally, there will also be two plots that will represent the results of the alg
 
 After training and testing the linear model on the DQN1 dataset, here are the results: R2 = 0.9677261528211019, MSE = 0.014645377333760565, and output tables:
 
-![Actual data compared with model prediction and Predicted values vs Actual values](./results/Plots.png)
+![Actual data compared with model prediction and Predicted values vs Actual values](../results/Plots.png)
 
 From these results, it is evident that the 0.968 R2 score is close to the perfect fit of 1.0 and the 0.015 Mean Squared Error is close to zero. It is presumable that the algorithm has both a low variation and has provided line of near perfect fit. However, as seen from the plot on the left, there are noticeable outliers from which the algorithm could not predict. For example, located above datapoint 150 the blue data point is significantly higher than the orange predicted value. As noted in the linear regression drawbacks, these outliers may in fact be an example of aforementioned “tipping points” that the model is mathematically unable to represent. This represents a clear area of potential improvement that could be addressed in future iterations.
 
-[Back to README](README.md)
+[Back to README](../README.md)

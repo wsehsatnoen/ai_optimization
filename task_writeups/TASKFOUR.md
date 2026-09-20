@@ -1,6 +1,6 @@
 # Task Four: What's Next?
 
-[Back to README](README.md)
+[Back to README](../README.md)
 
 A new use case for the optimized linear regression, which in the case of task two was the ridge regression regularization method, would be to accurately predict the number of Cycle Count tasks that will be generated for warehouse associates to complete.
 
@@ -18,6 +18,6 @@ Because simple addition is used in the feature engineering, the performance and 
 
 Integration will be a simple application based on the previous operational day’s data that is entered by the operator. Post training, the weighted model will be uploaded to the application and with first use, the operator will input the previous four days. Afterwards, the application will store the previous four days of data naturally so that the operator will simply input the previous day and not the three preceding. Finally, potential regulations that may affect the use of this model should simply align with the operational security policies that are in place. I.e., data should not be shared outside of the facility.
 
-[Back to README](README.md)
+[Back to README](../README.md)
 
 [^1]: Pennsylvania State University, "10.2 - Autocorrelation and Time Series Methods," *STAT 462: Applied Regression Analysis*, accessed August 14, 2026, <https://online.stat.psu.edu/stat462/node/188/>.
