@@ -1,9 +1,11 @@
 from sklearn.model_selection import train_test_split
+from pathlib import Path
 
 import pandas as pd
 
 # Importing the dataset using Pandas
-data = pd.read_csv('Dataset.csv')
+script_dir = Path(__file__).parent
+data = pd.read_csv(script_dir / 'Dataset.csv')
 
 # Here is where we are splitting up the dataset into features and a target.
 features = data.iloc[0:1000, 0:-1]

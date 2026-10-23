@@ -1,9 +1,9 @@
 from source.data.dataprep import X_train, y_train, X_test, y_test
 
-from linreg import linreg
-from optimization import randomsearch, halvesearch
-from regularization import lasso, ridge
-from ensemble import bagger, ada
+from source.linreg import linreg
+from source.optimization import randomsearch, halvesearch
+from source.regularization import lasso, ridge
+from source.ensemble import bagger, ada
 
 from sklearn.linear_model import LinearRegression
 
@@ -23,6 +23,8 @@ ridge(X_train, y_train, X_test, y_test)
 # Ensemble Learning Techniques
 bagger(linear_model, X_train, y_train, X_test, y_test)
 ada(linear_model, X_train, y_train, X_test, y_test)
+
+
 
 
 
